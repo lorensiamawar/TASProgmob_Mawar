@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TASProgmob_Mawar.TambahBarangPage" Title="Tambah Barang">
+  <StackLayout>
+    <Label Text="Kode Barang" />
+    <Entry x:Name="txtKodeBarang" IsEnabled="False" Text="{Binding KodeBarang}" />
+    <Label Text="ID Jenis Motor" />
+    <Entry x:Name="txtIdJenisMotor" Text="{Binding IdJenisMotor}" />
+    <Label Text="ID Kategori" />
+    <Entry x:Name="txtKategoriId" Text="{Binding KategoriId}" />
+    <Label Text="Nama Barang" />
+    <Entry x:Name="txtNama" Text="{Binding NamaBarang}" />
+    <Label Text="Stok" />
+    <Entry x:Name="txtStok" Text="{Binding Stok}" />
+    <Label Text="Harga Beli" />
+    <Entry x:Name="txtHargaBeli" Text="{Binding HargaBeli}" />
+    <Label Text="HargaJual" />
+    <Entry x:Name="txtHargaJual" Text="{Binding HargaJual}" />
+
+    <Button x:Name="btnTambah" Text="Tambah" />
+  </StackLayout>
+</ContentPage>

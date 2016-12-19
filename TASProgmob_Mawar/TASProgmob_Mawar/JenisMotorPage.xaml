@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TASProgmob_Mawar.JenisMotorPage" Title="Jenis Motor">
+  <StackLayout>
+    <ListView x:Name="listJenis" ItemsSource="{Binding ListJenis}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <Label Text="{Binding IdJenisMotor}" />
+          <Label Text="{Binding NamaMerk" />
+          <Label Text="{Binding NamaJenisMotor}" />
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    <Button x:Name="btnTambah" Text="Tambah"/>
+  </StackLayout>
+</ContentPage>
